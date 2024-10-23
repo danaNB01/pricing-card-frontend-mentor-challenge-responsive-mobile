@@ -1,0 +1,244 @@
+/* html {
+    box-sizing: border-box;
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+} */
+
+/* any generated content would respect those rules */
+/* *,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFD340;
+}
+
+main {
+    width: 50vw;
+    height: 65vh;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid black;
+    box-shadow: 5px 5px 15px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+span {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+}
+
+h1 {
+    color: #008CDB;
+    font-size: 2rem;
+    padding: 20px 0px;
+}
+
+button {
+    background-color: #FFBC24;
+    padding: 10px 30px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #d39d20;
+    transform: scale(1.05);
+}
+
+.info {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 8px 0px;
+}
+
+#upper-section {
+    padding-left: 10px;
+    overflow: hidden;
+    flex: 1;
+}
+
+#bottom-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    border-top: 2px solid black;
+}
+
+#subscription {
+    background-color: #086CB4;
+    flex: 1;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-right: 1px solid black;
+}
+
+#us {
+    background-color: #008CDB;
+    flex: 1;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-left: 1px solid black;
+}
+
+#upper-section>p:first-of-type {
+    color: #FFBC24;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 10px 0px;
+} */
+
+/* colors
+background #F2E8D5
+yellow #F2A30F
+orange #F2600C
+red #F21313
+black #000000 */
+
+:root {
+    /* Color variables */
+    --background-color: #F2E8D5;
+    --yellow-color: #F2A30F;
+    --orange-color: #F2600C;
+    --red-color: #F21313;
+    --black-color: #000000;
+    --blue-color: #03a6a6;
+    --blue-color-hover: hsl(180, 96%, 30%);
+
+    /* Font variables */
+    --heading-font: 'Bangers', sans-serif;
+    --body-font: sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+  rem = 16
+  2 rem = 32
+  1.5 rem = 24
+  1 rem = 16
+  0.5 rem = 8
+   */
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+    font-family: var(--body-font);
+    color: rgb(232, 232, 232);
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--black-color);
+}
+
+p {
+    font-size: 1rem;
+}
+
+span {
+    font-size: 1.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    border: 4px solid var(--black-color);
+}
+
+section {
+    flex-grow: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+p {
+    padding: 5px;
+}
+
+h1,
+h2 {
+    padding: 10px 0px;
+}
+
+button {
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 5px 15px;
+    background-color: var(--blue-color);
+    border: 2px solid var(--black-color);
+    color: black;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--blue-color-hover);
+    transform: scale(1.05);
+}
+
+ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+}
+
+#community>p:first-of-type {
+    font-weight: bold;
+}
+
+#community {
+    background-color: #F2A30F;
+    padding: 10px;
+    border-bottom: 2px solid var(--black-color);
+}
+
+#subscription {
+    background-color: #F2600C;
+    border-bottom: 2px solid var(--black-color);
+}
+
+#us {
+    background-color: #F21313;
+}
